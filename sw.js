@@ -1,11 +1,11 @@
-const CACHE_NAME = 'riptide-v1.1.1.1.1.1';
+const CACHE_NAME = 'riptide-v1.1.1.1.1.1.1';
 const urlsToCache = [
   '/',
   'favicon.ico',
   'icon.png',
   '/styles.css',
   //'/scripts.js',
-  '/manifest.json'
+  //'/manifest.json'
 ];
 
 self.addEventListener('install', function(event) {
@@ -31,13 +31,13 @@ self.addEventListener('fetch', function(event) {
           }
 
           // Otherwise, fetch the resource and add it to the cache
-          return fetch(event.request).then(function(networkResponse) {
+          /*return fetch(event.request).then(function(networkResponse) {
             return caches.open(CACHE_NAME).then(function(cache) {
               // Clone the response; a response can only be used once
               cache.put(event.request, networkResponse.clone());
               return networkResponse;
             });
-          });
+          });*/
         })
     );
   } else {
