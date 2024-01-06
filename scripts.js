@@ -7,9 +7,9 @@ var strings = [
   //"PLuWIxgNYqm0lnbXjnFF3bdEBbRHkr-R3k&enablejsapi=1",
   //"PLuWIxgNYqm0mQd_Z6eYbNa8Riyjl0znGC&enablejsapi=1",
   //"PLuWIxgNYqm0lXxPLZ9hBT9M46m53H5GES&enablejsapi=1"
-  "https://example.com",
-  "https://youtube.com",
-  "https://m.youtube.com"
+  "https://example.com&enablejsapi=1",
+  "https://youtube.com&enablejsapi=1",
+  "https://m.youtube.com&enablejsapi=1"
 ];
 
 function generateRandomPlaylist() {
