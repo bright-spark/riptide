@@ -1,7 +1,7 @@
 {
-  "name": "Little smooth YouTube video player",
-  "short_name": "Smoothie",
-  "description": "Little smooth PWA for playing random YouTube video playlists and that's all",
+  "name": "The surf is up!",
+  "short_name": "Riptide",
+  "description": "Little smooth PWA and that's all",
   "start_url": "/",
   "display": "standalone",
   "icons": [
