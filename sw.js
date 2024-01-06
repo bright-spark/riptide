@@ -1,4 +1,4 @@
-const CACHE_NAME = 'riptide-v1.1.1';
+const CACHE_NAME = 'riptide-v1.1.1.1';
 const urlsToCache = [
   '/',
   'favicon.ico',

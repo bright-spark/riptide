@@ -1,13 +1,15 @@
 // Array of prepopulated strings
 var strings = [
-  "https://www.youtube-nocookie.com/embed/videoseries?list=PLuWIxgNYqm0ketpCdUpLK4zjreYpDlLoE&enablejsapi=1",
+  //"https://www.youtube-nocookie.com/embed/videoseries?list=PLuWIxgNYqm0ketpCdUpLK4zjreYpDlLoE&enablejsapi=1",
   //"PLuWIxgNYqm0ketpCdUpLK4zjreYpDlLoE&enablejsapi=1",
   //"PLuWIxgNYqm0ketpCdUpLK4zjreYpDlLoE&enablejsapi=1",
   //"PLuWIxgNYqm0lwRXD3Sqe2_ZryiljuW-L9&enablejsapi=1",
   //"PLuWIxgNYqm0lnbXjnFF3bdEBbRHkr-R3k&enablejsapi=1",
   //"PLuWIxgNYqm0mQd_Z6eYbNa8Riyjl0znGC&enablejsapi=1",
   //"PLuWIxgNYqm0lXxPLZ9hBT9M46m53H5GES&enablejsapi=1"
-  "https://example.com"
+  "https://example.com",
+  "youtube.com",
+  "m.youtube.com"
 ];
 
 function generateRandomPlaylist() {
