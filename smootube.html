@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Smoothie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="MobileOptimized" content="400" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="google" content="notranslate" />
+  <meta name="theme-color" content="black" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Smoothie" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" / <link rel="icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icon.png" />
+  <link rel="apple-touch-icon" href="icon.png" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/framework7/7.0.0/css/framework7.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/framework7/7.0.0/js/framework7.min.js"></script>
+</head>
+
+<body>
+  <div class="statusbar"></div>
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="center">Smoothie</div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="page-content">
+      <iframe id="myVideo" src="https://www.youtube-nocookie.com/embed/?v=Tx1sqYc3qas&list=RDTx1sqYc3qas&start_radio=1"
+        frameborder="0"></iframe>
+    </div>
+  </div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+
+</html>

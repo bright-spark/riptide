@@ -1,0 +1,13 @@
+{
+  "name": "Little smooth YouTube video player",
+  "short_name": "Smoothie",
+  "description": "Little smooth PWA for playing random YouTube video playlists and that's all",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192"
+    }
+  ]
+}
