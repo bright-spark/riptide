@@ -7,9 +7,9 @@ var strings = [
   //"PLuWIxgNYqm0lnbXjnFF3bdEBbRHkr-R3k&enablejsapi=1",
   //"PLuWIxgNYqm0mQd_Z6eYbNa8Riyjl0znGC&enablejsapi=1",
   //"PLuWIxgNYqm0lXxPLZ9hBT9M46m53H5GES&enablejsapi=1"
-  "https://example.com&enablejsapi=1",
-  "https://youtube.com&enablejsapi=1",
-  "https://m.youtube.com&enablejsapi=1"
+  "https://example.com",
+  "https://youtube.com",
+  "https://m.youtube.com"
 ];
 
 function generateRandomPlaylist() {
@@ -21,7 +21,7 @@ function generateRandomPlaylist() {
   
   // Set the src attribute of the iframe to the random string
   // document.getElementById("play").src = "https://www.youtube-nocookie.com/embed/videoseries?list=" + randomPlaylist;
-  document.getElementById("play").src = randomPlaylist;
+  document.getElementById("myplay").src = randomPlaylist;
 }
 
 // Call the function when the page loads
