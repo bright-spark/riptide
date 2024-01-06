@@ -8,8 +8,8 @@ var strings = [
   //"PLuWIxgNYqm0mQd_Z6eYbNa8Riyjl0znGC&enablejsapi=1",
   //"PLuWIxgNYqm0lXxPLZ9hBT9M46m53H5GES&enablejsapi=1"
   "https://example.com",
-  "youtube.com",
-  "m.youtube.com"
+  "https://youtube.com",
+  "https://m.youtube.com"
 ];
 
 function generateRandomPlaylist() {
