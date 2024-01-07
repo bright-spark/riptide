@@ -30,13 +30,13 @@ self.addEventListener('fetch', function(event) {
           }
 
           // Otherwise, fetch the resource and add it to the cache
-          /*return fetch(event.request).then(function(networkResponse) {
+          return fetch(event.request).then(function(networkResponse) {
             return caches.open(CACHE_NAME).then(function(cache) {
               // Clone the response; a response can only be used once
               cache.put(event.request, networkResponse.clone());
               return networkResponse;
             });
-          });*/
+          });
         })
     );
   } else {
