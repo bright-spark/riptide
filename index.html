@@ -23,11 +23,13 @@
 </head>
 
 <body>
+  <div id="view"></div>
   <iframe title="play" id="play" 
-    allow="web-share; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allow="web-share; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-top-navigation-by-user-activation" 
     type="text/html" frameborder="0" allowfullscreen></iframe>
-  <!--<iframe id="play" type="text/html" frameborder="0"></iframe>-->
   <script>
+    /*
     var player;
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('play', {
@@ -47,14 +49,37 @@
     function onPlayerStateChange(event) {
       // This function will be called when the player's state changes.
       // Possible values are YT.PlayerState.PLAYING, YT.PlayerState.PAUSED, etc.
-    }
+    }*/
   </script>
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js');
     }
   </script>
-  <script src="scripts.js"></script>
+  <script>
+    function loadWebsiteContent() {
+      // Replace the URL with the website you want to load
+      var urlToLoad = 'https://example.com';
+
+      // Use AJAX to fetch the content from the URL
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', urlToLoad, true);
+
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          // If the request is successful, insert the content into the 'player' div
+          document.getElementById('view').innerHTML = xhr.responseText;
+        } else {
+          // Handle errors here, e.g., display an error message
+          document.getElementById('view').innerHTML = 'Failed to load content.';
+        }
+      };
+
+      xhr.send();
+    }
+  </script>
+  <!--<script src="scripts.js"></script>-->
+  <script>window.addEventListener("load", loadWebsiteContent());</script>
 </body>
 
 </html>
