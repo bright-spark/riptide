@@ -1,2 +1,2 @@
-# smoothie
- Smoothie - Simple PWA YouTube Player
+# riptide
+ Riptide - Simple PWA to surf with the tides without a problem - Hang Ten!
