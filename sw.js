@@ -1,11 +1,10 @@
-const CACHE_NAME = 'riptide-v1.1.1.1.1.1.1';
+const CACHE_NAME = 'riptide-v1.2';
 const urlsToCache = [
   '/',
   'favicon.ico',
   'icon.png',
-  '/styles.css',
-  //'/scripts.js',
-  //'/manifest.json'
+  'styles.css',
+  'manifest.json'
 ];
 
 self.addEventListener('install', function(event) {
