@@ -23,14 +23,14 @@
 </head>
 
 <body>
-  <iframe title="view" id="view" 
+  <iframe title="play" id="play" 
     allow="web-share; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    type="text/html" frameborder="0" allowfullscreen></iframe>-->
-  <!--<iframe id="view" type="text/html" frameborder="0"></iframe>-->
+    type="text/html" frameborder="0" allowfullscreen></iframe>
+  <!--<iframe id="play" type="text/html" frameborder="0"></iframe>-->
   <script>
     var player;
     function onYouTubeIframeAPIReady() {
-      player = new YT.Player('view', {
+      player = new YT.Player('play', {
         events: {
           'onReady': onPlayerReady,
           'onStateChange': onPlayerStateChange

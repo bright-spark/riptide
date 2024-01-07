@@ -1,7 +1,8 @@
 var strings = [
+  "https://example.com",
   "https://www.youtube-nocookie.com/embed/videoseries?list=PLuWIxgNYqm0ketpCdUpLK4zjreYpDlLoE&enablejsapi=1",
   "https://www.canva.com/design/DAF4kU195is/HKaAbVXdekY1F7zSJRx6zw/watch?embed",
-  "https://example.com",
+  "https://www.youtube-nocookie.com/embed/?v=Tx1sqYc3qas&list=RDTx1sqYc3qas&start_radio=1",
   "https://redbuilder.dev"
 ];
 
@@ -23,7 +24,7 @@ function setNextPlaylistID() {
     // Save the next playlist ID as the cookie
     document.cookie = "playlistID=" + nextPlaylist + "; path=/";
     // Open playlist
-    document.getElementById("view").src = nextPlaylist;
+    document.getElementById("play").src = nextPlaylist;
   } else {
     // If the cookie doesn't exist or its value is not in the array, generate a random playlist as before
     generateRandomPlaylist();
@@ -41,8 +42,7 @@ function generateRandomPlaylist() {
   document.cookie = "playlistID=" + randomPlaylist + "; path=/";
 
   // Set the src attribute of the iframe to the random playlist
-  // document.getElementById("playlistiframe").src = "https://www.youtube-nocookie.com/embed/videoseries?list=" + randomPlaylist;
-  document.getElementById("view").src = randomPlaylist;
+  document.getElementById("play").src = randomPlaylist;
 }
 
 // Call setNextPlaylistID() when the page loads

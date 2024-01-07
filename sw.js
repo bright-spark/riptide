@@ -1,4 +1,4 @@
-const CACHE_NAME = 'riptide-v1.2';
+const CACHE_NAME = 'riptide-v1.3';
 const urlsToCache = [
   '/',
   'favicon.ico',
@@ -20,7 +20,7 @@ self.addEventListener('install', function(event) {
 
 self.addEventListener('fetch', function(event) {
   // Check if the request URL is a YouTube video
-  if (event.request.url.startsWith('https://www.youtube-nocookie.com/embed/')) {
+  if (event.request.url.startsWith('https://www.youtube-nocookie.com/embed')) {
     event.respondWith(
       caches.match(event.request)
         .then(function(response) {
