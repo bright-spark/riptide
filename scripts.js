@@ -3,7 +3,10 @@ var strings = [
   "https://www.youtube-nocookie.com/embed/videoseries?list=PLuWIxgNYqm0ketpCdUpLK4zjreYpDlLoE&enablejsapi=1",
   "https://www.canva.com/design/DAF4kU195is/HKaAbVXdekY1F7zSJRx6zw/watch?embed",
   "https://www.youtube-nocookie.com/embed/?v=Tx1sqYc3qas&list=RDTx1sqYc3qas&start_radio=1",
-  "https://redbuilder.dev"
+  "https://redbuilder.dev",
+  "https://yt.xxlxx.co/rnd",
+  "https://yt.xxlxx.co/pop",
+  "https://yt.xxlxx.co/rad",
 ];
 
 function getCookie(name) {
